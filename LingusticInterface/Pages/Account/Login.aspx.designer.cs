@@ -15,12 +15,12 @@ namespace LingusticInterface
 	{
 
 		/// <summary>
-		/// button_login элемент управления.
+		/// buttonLogin элемент управления.
 		/// </summary>
 		/// <remarks>
 		/// Автоматически создаваемое поле.
 		/// Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
 		/// </remarks>
-		protected global::System.Web.UI.HtmlControls.HtmlButton button_login;
+		protected global::System.Web.UI.HtmlControls.HtmlButton buttonLogin;
 	}
 }

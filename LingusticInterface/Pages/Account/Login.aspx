@@ -15,6 +15,6 @@
         <small id="passwordHelp" class="form-text text-muted">Введите пароль</small>
     </div>
       
-    <button runat="server" id="button_login" type="submit" class="btn btn-info btn-lg">Войти</button>
+    <button runat="server" id="buttonLogin" type="submit" class="btn btn-info btn-lg">Войти</button>
 
 </asp:Content>
