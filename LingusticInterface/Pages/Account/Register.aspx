@@ -10,20 +10,20 @@
 		<label for="inputEmailRegister">Email</label>
 		<input 
 			runat="server" 
+			id="inputEmailRegister" 
 			type="email" 
 			class="form-control" 
-			id="inputEmailRegister" 
 			placeholder="name@example.com"
 		>
 	</div>
 
 	<div class="form-group">
-		<label for="inputLoginRegistr">Введите логин аккаунта</label>
+		<label for="inputLoginRegister">Введите логин аккаунта</label>
 		<input 
 			runat="server" 
+			id="inputLoginRegister"
 			type="text" 
-			class="form-control" 
-			id="inputLoginRegistr" 
+			class="form-control"  
 			placeholder="Login"
 		>
 	</div>
@@ -32,9 +32,9 @@
 		<label for="inputPasswordRegistr">Введите пароль</label>
 		<input 
 			runat="server" 
+			id="inputPasswordRegistr"
 			type="password" 
 			class="form-control" 
-			id="inputPasswordRegistr" 
 			placeholder="Password"
 		>
 	</div>
@@ -43,21 +43,22 @@
 		<label for="inputRepeatPasswordRegistr">Поторите пароль</label>
 		<input 
 			runat="server" 
+			id="inputRepeatPasswordRegistr"
 			type="password" 
 			class="form-control" 
-			id="inputRepeatPasswordRegistr"
 			placeholder="Repeat password"
 		>
 	</div>
 
 	<!-- Кнопка регистрации -->
-	<button 
+	<asp:Button 
 		runat="server" 
-		id="buttonRegistr" 
-		type="submit" 
-		class="btn btn-danger btn-lg"
-	>
-		Регистрация
-	</button>
+		ID="buttonRegistr" 
+		CssClass="btn btn-danger btn-lg" 
+		Text="Регистрация" 
+		OnClick="buttonRegistr_Click"
+	/>
+
+	<asp:TextBox runat="server" ID="messageErrorRegister" Visible="false" CssClass="alert alert-danger" />
 
 </asp:Content>

@@ -24,13 +24,13 @@ namespace LingusticInterface
 		protected global::System.Web.UI.HtmlControls.HtmlInputGenericControl inputEmailRegister;
 
 		/// <summary>
-		/// inputLoginRegistr элемент управления.
+		/// inputLoginRegister элемент управления.
 		/// </summary>
 		/// <remarks>
 		/// Автоматически создаваемое поле.
 		/// Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
 		/// </remarks>
-		protected global::System.Web.UI.HtmlControls.HtmlInputText inputLoginRegistr;
+		protected global::System.Web.UI.HtmlControls.HtmlInputText inputLoginRegister;
 
 		/// <summary>
 		/// inputPasswordRegistr элемент управления.
@@ -57,6 +57,15 @@ namespace LingusticInterface
 		/// Автоматически создаваемое поле.
 		/// Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
 		/// </remarks>
-		protected global::System.Web.UI.HtmlControls.HtmlButton buttonRegistr;
+		protected global::System.Web.UI.WebControls.Button buttonRegistr;
+
+		/// <summary>
+		/// messageErrorRegister элемент управления.
+		/// </summary>
+		/// <remarks>
+		/// Автоматически создаваемое поле.
+		/// Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+		/// </remarks>
+		protected global::System.Web.UI.WebControls.TextBox messageErrorRegister;
 	}
 }
