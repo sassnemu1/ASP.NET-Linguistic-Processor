@@ -59,6 +59,8 @@
 		OnClick="buttonRegistr_Click"
 	/>
 
+	<!-- Сообщения --> 
 	<asp:TextBox runat="server" ID="messageErrorRegister" Visible="false" CssClass="alert alert-danger" />
+	<asp:TextBox runat="server" ID="messageSuccessRegister" Visible="false" CssClass="alert alert-success" Width="250" />
 
 </asp:Content>
