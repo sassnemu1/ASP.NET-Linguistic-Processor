@@ -74,3 +74,8 @@ C:\Users\Саня\Desktop\LingusticInterface\LingusticInterface\obj\Debug\Lingus
 C:\Users\Саня\Desktop\LingusticInterface\LingusticInterface\obj\Debug\LingusticInterface.csproj.CopyComplete
 C:\Users\Саня\Desktop\LingusticInterface\LingusticInterface\obj\Debug\LingusticInterface.dll
 C:\Users\Саня\Desktop\LingusticInterface\LingusticInterface\obj\Debug\LingusticInterface.pdb
+C:\Users\Саня\Desktop\LingusticInterface\LingusticInterface\bin\EntityFramework.dll
+C:\Users\Саня\Desktop\LingusticInterface\LingusticInterface\bin\EntityFramework.SqlServer.dll
+C:\Users\Саня\Desktop\LingusticInterface\LingusticInterface\bin\EntityFramework.xml
+C:\Users\Саня\Desktop\LingusticInterface\LingusticInterface\bin\EntityFramework.SqlServer.xml
+C:\Users\Саня\Desktop\LingusticInterface\LingusticInterface\bin\ru\EntityFramework.resources.dll

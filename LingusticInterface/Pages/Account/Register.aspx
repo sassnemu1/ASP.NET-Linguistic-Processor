@@ -7,6 +7,18 @@
 
 	<!-- Форма регистрации -->
 	<div class="form-group">
+		<label for="inputNameRegistr">Имя</label>
+		<input 
+			runat="server" 
+			id="inputNameRegistr" 
+			type="text" 
+			class="form-control" 
+			placeholder="Имя"
+			
+		>
+	</div>
+
+	<div class="form-group">
 		<label for="inputEmailRegister">Email</label>
 		<input 
 			runat="server" 
@@ -14,6 +26,7 @@
 			type="email" 
 			class="form-control" 
 			placeholder="name@example.com"
+			
 		>
 	</div>
 
@@ -24,7 +37,7 @@
 			id="inputLoginRegister"
 			type="text" 
 			class="form-control"  
-			placeholder="Login"
+			placeholder="Логин"
 		>
 	</div>
 	<br />
@@ -35,18 +48,17 @@
 			id="inputPasswordRegistr"
 			type="password" 
 			class="form-control" 
-			placeholder="Password"
+			placeholder="Пароль"
 		>
 	</div>
 
 	<div class="form-group">
-		<label for="inputRepeatPasswordRegistr">Поторите пароль</label>
 		<input 
 			runat="server" 
 			id="inputRepeatPasswordRegistr"
 			type="password" 
 			class="form-control" 
-			placeholder="Repeat password"
+			placeholder="Повторите пароль"
 		>
 	</div>
 
