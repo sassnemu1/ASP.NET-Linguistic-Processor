@@ -31,7 +31,7 @@ namespace LingusticInterface
 
 			cheackFormOnError.ToCheckFormSignInOnError(login, password, messageErrorSignIn, messageSuccessSignIn);
 
-			if (isSignIn == true) 
+			if (isSignIn != true) 
 			{
 				string signInQuery = connect.GetSignInQuery();
 
@@ -50,13 +50,9 @@ namespace LingusticInterface
 					data[data.Count - 1][4] = reader[4].ToString();
 				}
 
-				reader.Close();
-				myConnection.Close();
 				foreach (string[] s in data)
 				{
-					for (int i = 0; i < s.Length; i++) {
-						cheackFormOnError.ToCheckDataSignInOnDataBases(login, password, s[1], s[3], messageErrorSignIn, messageSuccessSignIn);
-					}
+					cheackFormOnError.ToCheckDataSignInOnDataBases(login, password, s[1], s[3], messageErrorSignIn, messageSuccessSignIn);
 				}
 			}
 		}

@@ -68,11 +68,13 @@ namespace LingusticInterface
 		{
 			if (login == "")
 			{
+				messageSuccessSignIn.Visible = false;
 				messageErrorSignIn.Visible = true;
 				messageErrorSignIn.Text = "Не введен Логин";
 			}
 			else if (password == "")
 			{
+				messageSuccessSignIn.Visible = false;
 				messageErrorSignIn.Visible = true;
 				messageErrorSignIn.Text = "Не введен Пароль";
 			}
