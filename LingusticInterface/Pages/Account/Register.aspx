@@ -14,7 +14,6 @@
 			type="text" 
 			class="form-control" 
 			placeholder="Имя"
-			
 		>
 	</div>
 
@@ -26,7 +25,6 @@
 			type="email" 
 			class="form-control" 
 			placeholder="name@example.com"
-			
 		>
 	</div>
 

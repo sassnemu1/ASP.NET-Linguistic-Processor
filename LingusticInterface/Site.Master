@@ -61,6 +61,8 @@
         <div class="container body-content">
             <asp:ContentPlaceHolder ID="MainContent" runat="server">
             </asp:ContentPlaceHolder>
+            <asp:ContentPlaceHolder ID="ProfileContent" runat="server">
+            </asp:ContentPlaceHolder>
             <hr />
             <footer>
                 <p>

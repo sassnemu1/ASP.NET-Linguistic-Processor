@@ -15,30 +15,48 @@ namespace LingusticInterface
 	{
 
 		/// <summary>
-		/// inputLogin1 элемент управления.
+		/// inputLoginSignIn элемент управления.
 		/// </summary>
 		/// <remarks>
 		/// Автоматически создаваемое поле.
 		/// Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
 		/// </remarks>
-		protected global::System.Web.UI.HtmlControls.HtmlInputText inputLogin1;
+		protected global::System.Web.UI.HtmlControls.HtmlInputText inputLoginSignIn;
 
 		/// <summary>
-		/// inputPassword1 элемент управления.
+		/// inputPasswordSignIn элемент управления.
 		/// </summary>
 		/// <remarks>
 		/// Автоматически создаваемое поле.
 		/// Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
 		/// </remarks>
-		protected global::System.Web.UI.HtmlControls.HtmlInputPassword inputPassword1;
+		protected global::System.Web.UI.HtmlControls.HtmlInputPassword inputPasswordSignIn;
 
 		/// <summary>
-		/// buttonLogin элемент управления.
+		/// buttonSignIn элемент управления.
 		/// </summary>
 		/// <remarks>
 		/// Автоматически создаваемое поле.
 		/// Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
 		/// </remarks>
-		protected global::System.Web.UI.HtmlControls.HtmlButton buttonLogin;
+		protected global::System.Web.UI.WebControls.Button buttonSignIn;
+
+		/// <summary>
+		/// messageErrorSignIn элемент управления.
+		/// </summary>
+		/// <remarks>
+		/// Автоматически создаваемое поле.
+		/// Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+		/// </remarks>
+		protected global::System.Web.UI.WebControls.TextBox messageErrorSignIn;
+
+		/// <summary>
+		/// messageSuccessSignIn элемент управления.
+		/// </summary>
+		/// <remarks>
+		/// Автоматически создаваемое поле.
+		/// Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+		/// </remarks>
+		protected global::System.Web.UI.WebControls.TextBox messageSuccessSignIn;
 	}
 }

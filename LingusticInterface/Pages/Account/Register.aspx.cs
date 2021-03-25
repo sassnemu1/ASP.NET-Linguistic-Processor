@@ -6,7 +6,6 @@ using System.Web.UI;
 using System.Web.UI.WebControls;
 using System.Data;
 using System.Data.SqlClient;
-using System.Data.OleDb;
 
 
 namespace LingusticInterface
@@ -20,7 +19,7 @@ namespace LingusticInterface
 
 		protected void buttonRegistr_Click(object sender, EventArgs e)
 		{
-			CheckFormRegistration cheackFormOnError = new CheckFormRegistration();
+			CheckErrorOnFormData cheackFormOnError = new CheckErrorOnFormData();
 			GetConnectBase connect = new GetConnectBase();
 
 			bool isRegisteration = cheackFormOnError.isTrueRegister;
@@ -32,7 +31,7 @@ namespace LingusticInterface
 			SqlConnection myConnection = new SqlConnection(connectURL);
 			myConnection.Open();
 
-			cheackFormOnError.toCheckFormRegistrationOnError
+			cheackFormOnError.ToCheckFormRegistrationOnError
 			(
 				inputEmailRegister.Value, 
 				inputLoginRegister.Value, 

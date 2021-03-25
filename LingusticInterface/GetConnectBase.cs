@@ -16,5 +16,9 @@ namespace LingusticInterface
 		{
 			return "INSERT INTO [User] (Login, Email, Password, Name) VALUES (@login, @email, @password, @name)";
 		}
+		public string GetSignInQuery()
+		{
+			return "SELECT * FROM [User] ORDER BY id";
+		}
 	}
 }
