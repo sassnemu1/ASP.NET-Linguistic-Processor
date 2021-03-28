@@ -4,9 +4,9 @@
 
     <div class="jumbotron">
         <h1><%: Title %></h1>
-        <p class="lead">Войдите или зарегистрируйтесь в системе для того что бы начать работу с "Лингвистическим процессором"</p>
+        <p class="lead" runat="server" id="NotAuthTitleText">Войдите или зарегистрируйтесь в системе для того что бы начать работу с "Лингвистическим процессором"</p>
 
-        <div class="btn-toolbar" role="toolbar">
+        <div class="btn-toolbar" role="toolbar" runat="server" id="ButtonRegistrAndSignIn">
             <div class="btn-group mr-2" role="group">
                 <a runat="server" href="~/Pages/Account/Register" class="btn btn-danger btn-lg">Регистрация &raquo;</a>
             </div>
@@ -14,6 +14,8 @@
                 <a runat="server" href="~/Pages/Account/SignIn" class="btn btn-info btn-lg">Вход &raquo;</a>
             </div>
         </div>
+
+        <h3 runat="server" id="UserNameHomePage">Добро пожаловать, </h3>
     </div>
 
     <!-- 

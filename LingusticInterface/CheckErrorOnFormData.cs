@@ -9,6 +9,8 @@ namespace LingusticInterface
 {
 	public class CheckErrorOnFormData
 	{
+		RegistrationToken registr = new RegistrationToken();
+
 		public bool isTrueRegister = false;
 		public bool isTrueSignIn = false;
 		public bool isAuth = false;
@@ -50,11 +52,12 @@ namespace LingusticInterface
 			}
 			else
 			{
-				isAuth = true;
-				isTrueRegister = true;
 				messageErrorRegister.Visible = false;
 				messageSuccessRegister.Visible = true;
 				messageSuccessRegister.Text = "Все данные введены корректно.";
+
+				isTrueRegister = true;
+				registr.TokenReg = isTrueRegister;
 			}
 		}
 
@@ -87,7 +90,7 @@ namespace LingusticInterface
 			}
 		}
 
-		public void ToCheckDataSignInOnDataBases
+		public bool ToCheckDataSignInOnDataBases
 		(
 			string login, 
 			string password, 
@@ -106,10 +109,13 @@ namespace LingusticInterface
 			}
 			else 
 			{
+				isAuth = false;
 				messageSuccessSignIn.Visible = false;
 				messageErrorSignIn.Visible = true;
 				messageErrorSignIn.Text = "Логин или пароль введены не корректно, попробуйте снова !";
 			}
+
+			return isAuth;
 		}
 	}
 }

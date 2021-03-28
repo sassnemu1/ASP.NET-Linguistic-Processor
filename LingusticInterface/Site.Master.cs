@@ -11,11 +11,7 @@ namespace LingusticInterface
 	{
 		protected void Page_Load(object sender, EventArgs e)
 		{
-			CheckErrorOnFormData cheack = new CheckErrorOnFormData();
-			if (cheack.isTrueSignIn == false) 
-			{
-				ProfileContent.Visible = false;
-			}
+			
 		}
 	}
 }

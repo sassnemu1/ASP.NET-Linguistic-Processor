@@ -13,7 +13,7 @@ namespace LingusticInterface
 	{
 		protected void Page_Load(object sender, EventArgs e)
 		{
-			
+
 		}
 
 		protected void buttonSignIn_Click(object sender, EventArgs e)
@@ -21,7 +21,6 @@ namespace LingusticInterface
 			CheckErrorOnFormData cheackFormOnError = new CheckErrorOnFormData();
 			GetConnectBase connect = new GetConnectBase();
 
-			bool isSignIn = cheackFormOnError.isTrueSignIn;
 			string login = inputLoginSignIn.Value;
 			string password = inputPasswordSignIn.Value;
 			string connectURL = connect.ConnectURL;
@@ -30,8 +29,9 @@ namespace LingusticInterface
 			myConnection.Open();
 
 			cheackFormOnError.ToCheckFormSignInOnError(login, password, messageErrorSignIn, messageSuccessSignIn);
+			bool isSignIn = cheackFormOnError.isTrueSignIn;
 
-			if (isSignIn != true) 
+			if (isSignIn)
 			{
 				string signInQuery = connect.GetSignInQuery();
 
@@ -52,7 +52,12 @@ namespace LingusticInterface
 
 				foreach (string[] s in data)
 				{
-					cheackFormOnError.ToCheckDataSignInOnDataBases(login, password, s[1], s[3], messageErrorSignIn, messageSuccessSignIn);
+					bool authToken = cheackFormOnError.ToCheckDataSignInOnDataBases(login, password, s[1], s[3], messageErrorSignIn, messageSuccessSignIn);
+
+					if (authToken) {
+						Auth auth = new Auth();
+						auth.AuthToken = authToken;
+					}
 				}
 			}
 		}

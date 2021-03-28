@@ -19,10 +19,10 @@ namespace LingusticInterface
 
 		protected void buttonRegistr_Click(object sender, EventArgs e)
 		{
+			RegistrationToken registrToken = new RegistrationToken();
 			CheckErrorOnFormData cheackFormOnError = new CheckErrorOnFormData();
 			GetConnectBase connect = new GetConnectBase();
 
-			bool isRegisteration = cheackFormOnError.isTrueRegister;
 			string password = inputPasswordRegistr.Value;
 			string password_repeat = inputRepeatPasswordRegistr.Value;
 			string name = inputNameRegistr.Value;
@@ -42,19 +42,19 @@ namespace LingusticInterface
 				messageSuccessRegister
 			);
 
-			if (isRegisteration == true) 
+			if (registrToken.TokenReg) 
 			{
 				string registrQuery = connect.GetRegistrQuery();
 
-				using (SqlCommand comand = new SqlCommand(registrQuery, myConnection))
+				using (SqlCommand command = new SqlCommand(registrQuery, myConnection))
 				{
-					comand.Parameters.AddWithValue("@email", inputEmailRegister.Value);
-					comand.Parameters.AddWithValue("@login", inputLoginRegister.Value);
-					comand.Parameters.AddWithValue("@password", password);
-					comand.Parameters.AddWithValue("@name", name);
+					command.Parameters.AddWithValue("@login", inputLoginRegister.Value);
+					command.Parameters.AddWithValue("@email", inputEmailRegister.Value);
+					command.Parameters.AddWithValue("@password", password);
+					command.Parameters.AddWithValue("@name", name);
 
-					comand.CommandType = CommandType.Text;
-					comand.ExecuteNonQuery();
+					command.CommandType = CommandType.Text;
+					command.ExecuteNonQuery();
 				}
 			}
 

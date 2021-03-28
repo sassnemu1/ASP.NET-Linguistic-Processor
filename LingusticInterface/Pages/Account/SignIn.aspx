@@ -25,7 +25,7 @@
             placeholder="Введите пароль"
         >
     </div>
-      
+
     <asp:Button 
         runat="server" 
         ID="buttonSignIn" 
@@ -35,6 +35,6 @@
     />
 
     <asp:TextBox runat="server" ID="messageErrorSignIn" Visible="false" CssClass="alert alert-danger" />
-	<asp:TextBox runat="server" ID="messageSuccessSignIn" Visible="false" CssClass="alert alert-success" Width="250" />
+	<asp:TextBox runat="server" ID="messageSuccessSignIn" Visible="false" CssClass="alert alert-success" />
 
 </asp:Content>
