@@ -15,6 +15,33 @@ namespace LingusticInterface
 	{
 
 		/// <summary>
+		/// AuthCloseButtonNavigation элемент управления.
+		/// </summary>
+		/// <remarks>
+		/// Автоматически создаваемое поле.
+		/// Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+		/// </remarks>
+		protected global::System.Web.UI.HtmlControls.HtmlGenericControl AuthCloseButtonNavigation;
+
+		/// <summary>
+		/// navUserLogin элемент управления.
+		/// </summary>
+		/// <remarks>
+		/// Автоматически создаваемое поле.
+		/// Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+		/// </remarks>
+		protected global::System.Web.UI.HtmlControls.HtmlAnchor navUserLogin;
+
+		/// <summary>
+		/// CloseButton элемент управления.
+		/// </summary>
+		/// <remarks>
+		/// Автоматически создаваемое поле.
+		/// Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+		/// </remarks>
+		protected global::System.Web.UI.WebControls.Button CloseButton;
+
+		/// <summary>
 		/// MainContent элемент управления.
 		/// </summary>
 		/// <remarks>

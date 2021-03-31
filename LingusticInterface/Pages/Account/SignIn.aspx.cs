@@ -52,11 +52,20 @@ namespace LingusticInterface
 
 				foreach (string[] s in data)
 				{
+
 					bool authToken = cheackFormOnError.ToCheckDataSignInOnDataBases(login, password, s[1], s[3], messageErrorSignIn, messageSuccessSignIn);
 
-					if (authToken) {
+					if (authToken)
+					{
 						Auth auth = new Auth();
 						auth.AuthToken = authToken;
+						buttonSignIn.PostBackUrl = "~/";
+
+						UserInformation user = new UserInformation();
+						user.Login = s[1];
+						user.Email = s[2];
+						user.Password = s[3];
+						user.Name = s[4];	
 					}
 				}
 			}

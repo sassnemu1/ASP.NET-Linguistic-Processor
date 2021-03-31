@@ -11,7 +11,29 @@ namespace LingusticInterface
 	{
 		protected void Page_Load(object sender, EventArgs e)
 		{
-			
+			Auth auth = new Auth();
+			UserInformation user = new UserInformation();
+
+			if (auth.AuthToken)
+			{
+				navUserLogin.InnerText = user.Login; 
+				AuthCloseButtonNavigation.Visible = true;
+				MainContent.Visible = false;
+				ProfileContent.Visible = true;
+			}
+			else
+			{
+				AuthCloseButtonNavigation.Visible = false;
+				MainContent.Visible = true;
+				ProfileContent.Visible = false;
+			}
+		}
+
+		protected void CloseButton_Click(object sender, EventArgs e)
+		{
+			Auth auth = new Auth();
+			auth.AuthToken = false;
+			CloseButton.PostBackUrl = "~/";
 		}
 	}
 }

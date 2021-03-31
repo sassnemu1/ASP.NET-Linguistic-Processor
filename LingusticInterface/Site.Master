@@ -50,12 +50,29 @@
                     <a class="navbar-brand" runat="server" href="~/">ЛП</a>
                 </div>
                 <div class="navbar-collapse collapse">
+
                     <ul class="nav navbar-nav">
                         <li><a runat="server" href="~/">Главная</a></li>
                         <li><a runat="server" href="~/Pages/About">Информация</a></li>
                         <li><a runat="server" href="~/Pages/Contact">Связаться</a></li>
                     </ul>
+
+                    <div class="nav navbar-nav" runat="server" id="AuthCloseButtonNavigation">
+                        <a runat="server" id="navUserLogin"></a>
+
+                        <a runat="server" href="~/">
+                            <asp:Button 
+                                runat="server" 
+                                CssClass="btn btn-link" 
+                                Text="Выход"  
+                                ID="CloseButton" 
+                                OnClick="CloseButton_Click" 
+                            />
+                        </a>
+                    </div>
                 </div>
+                    
+
             </div>
         </div>
         <div class="container body-content">
@@ -72,7 +89,7 @@
                 </p>
             </footer>
         </div>
-
     </form>
+
 </body>
 </html>

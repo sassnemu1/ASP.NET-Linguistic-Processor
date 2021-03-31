@@ -107,7 +107,7 @@ namespace LingusticInterface
 				messageSuccessSignIn.Visible = true;
 				messageSuccessSignIn.Text = "Вход совершен";
 			}
-			else 
+			else if (login != loginDataBases && password != passwordDataBases) 
 			{
 				isAuth = false;
 				messageSuccessSignIn.Visible = false;
