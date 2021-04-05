@@ -65,7 +65,7 @@ namespace LingusticInterface
 						user.Login = s[1];
 						user.Email = s[2];
 						user.Password = s[3];
-						user.Name = s[4];	
+						user.Name = s[4];
 					}
 				}
 			}

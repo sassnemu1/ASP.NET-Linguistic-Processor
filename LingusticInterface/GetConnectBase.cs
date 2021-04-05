@@ -22,5 +22,9 @@ namespace LingusticInterface
 		{
 			return "SELECT * FROM [User] ORDER BY Id";
 		}
+		public string GetSignInQuery2()
+		{
+			return "SELECT * FROM [User] WHERE Login = @login AND Password = @password";
+		}
 	}
 }
