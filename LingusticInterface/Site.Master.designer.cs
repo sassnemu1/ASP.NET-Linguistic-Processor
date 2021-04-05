@@ -58,5 +58,32 @@ namespace LingusticInterface
 		/// Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
 		/// </remarks>
 		protected global::System.Web.UI.WebControls.ContentPlaceHolder ProfileContent;
+
+		/// <summary>
+		/// LinguisticText элемент управления.
+		/// </summary>
+		/// <remarks>
+		/// Автоматически создаваемое поле.
+		/// Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+		/// </remarks>
+		protected global::System.Web.UI.HtmlControls.HtmlTextArea LinguisticText;
+
+		/// <summary>
+		/// LinguisticProcessButtonStart элемент управления.
+		/// </summary>
+		/// <remarks>
+		/// Автоматически создаваемое поле.
+		/// Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+		/// </remarks>
+		protected global::System.Web.UI.WebControls.Button LinguisticProcessButtonStart;
+
+		/// <summary>
+		/// LinguisticTextResult элемент управления.
+		/// </summary>
+		/// <remarks>
+		/// Автоматически создаваемое поле.
+		/// Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+		/// </remarks>
+		protected global::System.Web.UI.HtmlControls.HtmlTextArea LinguisticTextResult;
 	}
 }

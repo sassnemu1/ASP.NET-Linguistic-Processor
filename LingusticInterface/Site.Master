@@ -71,14 +71,34 @@
                         </a>
                     </div>
                 </div>
-                    
-
             </div>
         </div>
+
         <div class="container body-content">
+
             <asp:ContentPlaceHolder ID="MainContent" runat="server">
             </asp:ContentPlaceHolder>
+
             <asp:ContentPlaceHolder ID="ProfileContent" runat="server">
+
+                <div class="row">
+		            <div class="col-lg-6">
+			            <h2>Введите текст</h2>
+                        <textarea runat="server" id="LinguisticText" placeholder="Введите текст" rows="20" cols="50"></textarea>
+                        <asp:Button 
+                            runat="server" 
+                            ID="LinguisticProcessButtonStart" 
+		                    CssClass="btn btn-info btn-lg" 
+                            Text="Проверить текст"
+                            OnClick="LinguisticProcessButtonStart_Click"
+                        />
+                    </div>
+		            <div class="col-lg-6">
+			            <h2>Рузультат</h2>
+                        <textarea runat="server" id="LinguisticTextResult" rows="20" cols="50"></textarea>
+                    </div>
+	            </div>
+
             </asp:ContentPlaceHolder>
             <hr />
             <footer>
