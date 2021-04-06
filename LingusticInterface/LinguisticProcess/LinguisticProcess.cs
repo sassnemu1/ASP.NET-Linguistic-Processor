@@ -7,27 +7,70 @@ namespace LingusticInterface
 {
 	public class LinguisticProcess
 	{
-		public int countSymbol = 0;
-		public List<string> wordList = new List<string>();
-
+		static List<string> wordListNotSymbol = new List<string>();
+		public List<string> wordListParseOfPredlog = new List<string>();
 		public void LinguisticProcessTextRender(string text) 
 		{
 			CheckSymbol cheack = new CheckSymbol();
+			Parsing pars = new Parsing();
 
 			string[] MainTextArray = text.Split();
+
+			//Удаление занаков препинания в тексте
+			string lineNotSymbol = "";
 
 			for (int i = 0; i < MainTextArray.Length; i++) 
 			{
 				char[] wordArray = MainTextArray[i].ToCharArray();
-				string word = cheack.cheackSymbol(wordArray);
-				wordList.Add(word);
+				string wordNotSymbol = cheack.cheackSymbol(wordArray);
+
+				lineNotSymbol = wordNotSymbol;
+				wordListNotSymbol.Add(wordNotSymbol);
+			}
+
+			string[] wordArrayNotSymbol = lineNotSymbol.Split();
+
+			for (int i = 0; i < wordArrayNotSymbol.Length; i++) 
+			{
+				string wordNotPredlog = pars.parsingWordOfPredlog(wordArrayNotSymbol);
+				wordListParseOfPredlog.Add(wordNotPredlog);
 			}
 			
-			
 		}
-
 	}
 
+	class Parsing : LinguisticProcess 
+	{
+		string[] predlogWordArray = { 
+			" ", "на", "под", "за", "к", "из", "по",
+			"об", "от", "в", "у", "с", "о",
+			"над", "около", "при", "перед",
+		};
+		public string parsingWordOfPredlog(string[] wordArray) 
+		{
+			for (int i = 0; i < wordArray.Length; i++) 
+			{
+				for (int j = 0; j < predlogWordArray.Length; j++) 
+				{
+					if (wordArray[i] == predlogWordArray[j]) 
+					{
+						Array.Clear(wordArray, i, 1);
+					}
+				}
+			}
+
+			string resultWord = "";
+
+			foreach (string s in wordArray)
+			{
+				resultWord += s;
+				resultWord += " ";
+			}
+				
+			return resultWord;
+		}
+	}
+	//-------------------------------------------------------
 	class CheckSymbol : LinguisticProcess
 	{
 		List<string> wordListArray = new List<string>();
@@ -39,7 +82,8 @@ namespace LingusticInterface
 			'-', '_', '=', '+', '|', '~',
 		};
 
-		public string cheackSymbol(char[] wordArray) {
+		public string cheackSymbol(char[] wordArray)
+		{
 
 			for (int i = 0; i < wordArray.Length; i++)
 			{
@@ -47,7 +91,6 @@ namespace LingusticInterface
 				{
 					if (wordArray[i] == symbolArray[j])
 					{
-						countSymbol++;
 						Array.Clear(wordArray, i, 1);
 					}
 				}
@@ -58,8 +101,11 @@ namespace LingusticInterface
 
 			string word = "";
 
-			foreach (string s in wordListArray) 
+			foreach (string s in wordListArray)
+			{
 				word += s;
+				word += " ";
+			}
 
 			return word;
 		}
