@@ -24,9 +24,9 @@ namespace LingusticInterface
 			else
 			{
 				AuthCloseButtonNavigation.Visible = false;
-				//Поменять false на true
-				MainContent.Visible = false;
-				ProfileContent.Visible = true;
+
+				MainContent.Visible = true;
+				ProfileContent.Visible = false;
 			}
 		}
 
@@ -40,16 +40,15 @@ namespace LingusticInterface
 		protected void LinguisticProcessButtonStart_Click(object sender, EventArgs e)
 		{
 			string text = LinguisticText.Value;
-			string result = LinguisticTextResult.Value;
 
 			LinguisticProcess process = new LinguisticProcess();
 			process.LinguisticProcessTextRender(text);
 
-			foreach (string s in process.wordListParseOfPredlog) 
+			foreach (string s in process.wordListParseOfPredlog)
 			{
 				LinguisticTextResult.Value = s;
 			}
-
+					
 
 		}
 	}

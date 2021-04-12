@@ -7,11 +7,15 @@ using System.Web.UI.WebControls;
 
 namespace LingusticInterface
 {
-	public partial class ProfileContent : Page
+	public partial class UserProfile : Page
 	{
 		protected void Page_Load(object sender, EventArgs e)
 		{
+			UserInformation user = new UserInformation();
 
+			userName.InnerText = user.Name;
+			userLogin.InnerText = user.Login;
+			userEmail.InnerText = user.Email;
 		}
 	}
 }

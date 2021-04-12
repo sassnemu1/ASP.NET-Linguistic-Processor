@@ -62,6 +62,7 @@ namespace LingusticInterface
 						buttonSignIn.PostBackUrl = "~/";
 
 						UserInformation user = new UserInformation();
+						user.Id = s[0];
 						user.Login = s[1];
 						user.Email = s[2];
 						user.Password = s[3];

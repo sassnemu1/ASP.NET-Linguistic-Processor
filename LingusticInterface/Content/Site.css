@@ -4,6 +4,15 @@ body {
     padding-bottom: 20px;
 }
 
+#ProfileContent_userName {
+    text-align: center;
+    margin: 0;
+}
+#ProfileContent_userLogin, #ProfileContent_userEmail {
+    font-size: 18px;
+    font-weight: 600;
+}
+
 /* Wrapping element */
 /* Set some basic padding to keep content from hitting the edges */
 .body-content {

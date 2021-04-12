@@ -11,6 +11,7 @@ namespace LingusticInterface
 		static string login;
 		static string password;
 		static string email;
+		static string id;
 
 		public string Name
 		{
@@ -31,6 +32,11 @@ namespace LingusticInterface
 		{
 			get { return password; }
 			set { password = value; }
+		}
+		public string Id
+		{
+			get { return id; }
+			set { id = value; }
 		}
 	}
 }

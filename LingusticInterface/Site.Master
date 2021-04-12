@@ -58,7 +58,7 @@
                     </ul>
 
                     <div class="nav navbar-nav" runat="server" id="AuthCloseButtonNavigation">
-                        <a runat="server" id="navUserLogin"></a>
+                        <a runat="server" href="~/UserProfile" id="navUserLogin"></a>
 
                         <a runat="server" href="~/">
                             <asp:Button 
@@ -80,7 +80,6 @@
             </asp:ContentPlaceHolder>
 
             <asp:ContentPlaceHolder ID="ProfileContent" runat="server">
-
                 <div class="row">
 		            <div class="col-lg-6">
 			            <h2>Введите текст</h2>
@@ -98,7 +97,6 @@
                         <textarea runat="server" id="LinguisticTextResult" rows="20" cols="50"></textarea>
                     </div>
 	            </div>
-
             </asp:ContentPlaceHolder>
             <hr />
             <footer>
