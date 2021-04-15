@@ -4,6 +4,9 @@ using System.Linq;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
+using System.Data;
+using System.Data.SqlClient;
+
 
 namespace LingusticInterface
 {
@@ -50,6 +53,31 @@ namespace LingusticInterface
 			}
 					
 
+		}
+
+		protected void SaveTextResult_Click(object sender, EventArgs e)
+		{
+			GetConnectBase connect = new GetConnectBase();
+			UserInformation user = new UserInformation();
+
+			string title = TitleTextInput.Value;
+			string result = LinguisticTextResult.Value;
+
+			string connectURL = connect.ConnectURL;
+			string registrQuery = connect.GetSaveResultTextQuery();
+
+			SqlConnection myConnection = new SqlConnection(connectURL);
+			myConnection.Open();
+
+			using (SqlCommand command = new SqlCommand(registrQuery, myConnection))
+			{
+				command.Parameters.AddWithValue("@title", title);
+				command.Parameters.AddWithValue("@text", result);
+				command.Parameters.AddWithValue("@userid", user.Id);
+
+				command.CommandType = CommandType.Text;
+				command.ExecuteNonQuery();
+			}
 		}
 	}
 }

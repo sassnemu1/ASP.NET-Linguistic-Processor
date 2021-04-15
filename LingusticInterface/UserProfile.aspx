@@ -3,7 +3,7 @@
 <asp:Content ID="BodyContent" ContentPlaceHolderID="ProfileContent" runat="server">
 
     <div class="row">
-		<div class="col-md-4 card" style="width: 25rem;">
+		<div class="col-md-4 card" style="width: 30rem;">
 	      <div class="card-header">
             <h2><%: Title %></h2>
 	      </div>
@@ -22,7 +22,10 @@
           </ul>
         </div>
         <div class="col-md-8">
-            <h2>Hello !</h2>
+            <div class="card-header">
+                <h2>Запросы</h2>
+	         </div>
+            <ul runat="server" id="ListAllTextsOfUser"></ul>
         </div>
     </div>
 	

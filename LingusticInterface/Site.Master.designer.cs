@@ -60,6 +60,15 @@ namespace LingusticInterface
 		protected global::System.Web.UI.WebControls.ContentPlaceHolder ProfileContent;
 
 		/// <summary>
+		/// TitleTextInput элемент управления.
+		/// </summary>
+		/// <remarks>
+		/// Автоматически создаваемое поле.
+		/// Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+		/// </remarks>
+		protected global::System.Web.UI.HtmlControls.HtmlInputText TitleTextInput;
+
+		/// <summary>
 		/// LinguisticText элемент управления.
 		/// </summary>
 		/// <remarks>
@@ -85,5 +94,14 @@ namespace LingusticInterface
 		/// Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
 		/// </remarks>
 		protected global::System.Web.UI.HtmlControls.HtmlTextArea LinguisticTextResult;
+
+		/// <summary>
+		/// SaveTextResult элемент управления.
+		/// </summary>
+		/// <remarks>
+		/// Автоматически создаваемое поле.
+		/// Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+		/// </remarks>
+		protected global::System.Web.UI.WebControls.Button SaveTextResult;
 	}
 }

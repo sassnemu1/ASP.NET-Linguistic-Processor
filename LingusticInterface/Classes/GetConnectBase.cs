@@ -22,9 +22,17 @@ namespace LingusticInterface
 		{
 			return "SELECT * FROM [User] ORDER BY Id";
 		}
-		public string GetSignInQuery2()
+		//public string GetSignInQuery2()
+		//{
+		//	return "SELECT * FROM [User] WHERE Login = @login AND Password = @password";
+		//}
+		public string GetTextListQuery() 
 		{
-			return "SELECT * FROM [User] WHERE Login = @login AND Password = @password";
+			return "SELECT * FROM [Text] ORDER BY UserId";
+		}
+		public string GetSaveResultTextQuery()
+		{
+			return "INSERT INTO [Text] (Title, Text, UserId) VALUES (@title, @text, @userid)";
 		}
 	}
 }
