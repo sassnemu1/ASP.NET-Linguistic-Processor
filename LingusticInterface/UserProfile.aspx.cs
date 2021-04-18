@@ -50,7 +50,7 @@ namespace LingusticInterface
 
 				string li =
 					"<li>" +
-						"<button class='btn btn-primary' type='button' data-toggle='collapse' data-target='#collapse" + title + "' aria-expanded='false aria-controls='collapseExample'>" +
+						"<button id='buttonTitleTextUserProfile' class='btn btn-primary' type='button' data-toggle='collapse' data-target='#collapse" + title + "' aria-expanded='false aria-controls='collapseExample'>" +
 							title +
 						"</button>" +
 						"<div class='collapse' id='collapse" + title + "'>" +
@@ -61,9 +61,7 @@ namespace LingusticInterface
 					"</li>";
 
 				if (user_id == id_user_text)
-				{
 					ListAllTextsOfUser.InnerHtml += li;
-				}
 			}
 		}
 	}

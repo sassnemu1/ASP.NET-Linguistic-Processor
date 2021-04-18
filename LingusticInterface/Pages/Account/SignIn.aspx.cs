@@ -59,7 +59,6 @@ namespace LingusticInterface
 					{
 						Auth auth = new Auth();
 						auth.AuthToken = authToken;
-						buttonSignIn.PostBackUrl = "~/";
 
 						UserInformation user = new UserInformation();
 						user.Id = s[0];

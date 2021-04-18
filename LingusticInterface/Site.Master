@@ -81,10 +81,25 @@
 
             <asp:ContentPlaceHolder ID="ProfileContent" runat="server">
                 <div class="row">
-                    <input runat="server" id="TitleTextInput" type="text" placeholder="Введите название текста" />
+                    <br />
 		            <div class="col-lg-6">
-			            <h2>Введите текст</h2>
-                        <textarea runat="server" id="LinguisticText" placeholder="Введите текст" rows="20" cols="50"></textarea>
+                        <div class="form-group">
+                            <label for="LinguisticText">Введите текст</label>
+                            <input class="form-control form-control-lg" runat="server" id="TitleTextInput" type="text" />
+                            <br />
+                            <textarea runat="server" id="LinguisticText" class="form-control" placeholder="Введите текст" rows="20"></textarea>
+                        </div>
+                        
+                    </div>
+		            <div class="col-lg-6">
+                        <div class="form-group">
+                            <label for="LinguisticTextResult">Результат</label>
+                            <textarea runat="server" id="LinguisticTextResult" class="form-control" placeholder="Введите текст" rows="23"></textarea>
+                        </div>
+                    </div>
+	            </div>
+                <div class="row">
+                    <div class="col-lg-6">
                         <asp:Button 
                             runat="server" 
                             ID="LinguisticProcessButtonStart" 
@@ -92,10 +107,6 @@
                             Text="Проверить текст"
                             OnClick="LinguisticProcessButtonStart_Click"
                         />
-                    </div>
-		            <div class="col-lg-6">
-			            <h2>Рузультат</h2>
-                        <textarea runat="server" id="LinguisticTextResult" rows="20" cols="50"></textarea>
                         <asp:Button 
                             runat="server"
                             ID="SaveTextResult"
@@ -104,7 +115,38 @@
                             OnClick="SaveTextResult_Click"
                         />
                     </div>
-	            </div>
+                    <div class="col-lg-6">
+                        <div runat="server" id="textSuccess" class="alert alert-success" role="alert">
+                            This is a success alert—check it out!
+                        </div>
+                        <div runat="server" id="textDanger" class="alert alert-danger" role="alert">
+                            This is a danger alert—check it out!
+                        </div>
+                    </div>
+                </div>
+                <br />
+                <div class="row">
+                    <div class="col-md-3 card">
+                        <div class="card-header">
+                            Знаки препинания
+                        </div>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item">Cras justo odio</li>
+                            <li class="list-group-item">Dapibus ac facilisis in</li>
+                            <li class="list-group-item">Vestibulum at eros</li>
+                        </ul>
+                    </div>
+                    <div class="col-md-3 card">
+                        <div class="card-header">
+                            Предлоги
+                        </div>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item">Cras justo odio</li>
+                            <li class="list-group-item">Dapibus ac facilisis in</li>
+                            <li class="list-group-item">Vestibulum at eros</li>
+                        </ul>
+                    </div>
+                </div>
             </asp:ContentPlaceHolder>
             <hr />
             <footer>

@@ -4,8 +4,16 @@ body {
     padding-bottom: 20px;
 }
 
+LinguisticTextResult {
+    resize: none;
+}
+
 li {
     list-style-type: none;
+}
+
+#buttonTitleTextUserProfile {
+    width: 40%;
 }
 
 #ProfileContent_userName {

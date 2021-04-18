@@ -78,15 +78,6 @@ namespace LingusticInterface
 		protected global::System.Web.UI.HtmlControls.HtmlTextArea LinguisticText;
 
 		/// <summary>
-		/// LinguisticProcessButtonStart элемент управления.
-		/// </summary>
-		/// <remarks>
-		/// Автоматически создаваемое поле.
-		/// Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
-		/// </remarks>
-		protected global::System.Web.UI.WebControls.Button LinguisticProcessButtonStart;
-
-		/// <summary>
 		/// LinguisticTextResult элемент управления.
 		/// </summary>
 		/// <remarks>
@@ -96,6 +87,15 @@ namespace LingusticInterface
 		protected global::System.Web.UI.HtmlControls.HtmlTextArea LinguisticTextResult;
 
 		/// <summary>
+		/// LinguisticProcessButtonStart элемент управления.
+		/// </summary>
+		/// <remarks>
+		/// Автоматически создаваемое поле.
+		/// Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+		/// </remarks>
+		protected global::System.Web.UI.WebControls.Button LinguisticProcessButtonStart;
+
+		/// <summary>
 		/// SaveTextResult элемент управления.
 		/// </summary>
 		/// <remarks>
@@ -103,5 +103,23 @@ namespace LingusticInterface
 		/// Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
 		/// </remarks>
 		protected global::System.Web.UI.WebControls.Button SaveTextResult;
+
+		/// <summary>
+		/// textSuccess элемент управления.
+		/// </summary>
+		/// <remarks>
+		/// Автоматически создаваемое поле.
+		/// Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+		/// </remarks>
+		protected global::System.Web.UI.HtmlControls.HtmlGenericControl textSuccess;
+
+		/// <summary>
+		/// textDanger элемент управления.
+		/// </summary>
+		/// <remarks>
+		/// Автоматически создаваемое поле.
+		/// Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+		/// </remarks>
+		protected global::System.Web.UI.HtmlControls.HtmlGenericControl textDanger;
 	}
 }

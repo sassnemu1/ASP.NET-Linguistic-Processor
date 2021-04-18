@@ -13,7 +13,7 @@
             class="form-control" 
             id="inputLoginSignIn" 
             placeholder="Введите ваш логин"
-        >
+        />
     </div>
     <div class="form-group">
         <label for="inputPasswordSignIn">Пароль</label>
@@ -23,7 +23,7 @@
             class="form-control" 
             id="inputPasswordSignIn" 
             placeholder="Введите пароль"
-        >
+        />
     </div>
 
     <asp:Button 
