@@ -116,11 +116,11 @@
                         />
                     </div>
                     <div class="col-lg-6">
-                        <div runat="server" id="textSuccess" class="alert alert-success" role="alert">
-                            This is a success alert—check it out!
+                        <div runat="server" id="textSuccess" class="alert alert-success" role="alert" visible="false">
+                            
                         </div>
-                        <div runat="server" id="textDanger" class="alert alert-danger" role="alert">
-                            This is a danger alert—check it out!
+                        <div runat="server" id="textDanger" class="alert alert-danger" role="alert" visible="false">
+                            
                         </div>
                     </div>
                 </div>
@@ -131,9 +131,11 @@
                             Знаки препинания
                         </div>
                         <ul class="list-group list-group-flush">
+                            <!-- 
                             <li class="list-group-item">Cras justo odio</li>
                             <li class="list-group-item">Dapibus ac facilisis in</li>
                             <li class="list-group-item">Vestibulum at eros</li>
+                            -->
                         </ul>
                     </div>
                     <div class="col-md-3 card">
@@ -141,9 +143,11 @@
                             Предлоги
                         </div>
                         <ul class="list-group list-group-flush">
+                            <!-- 
                             <li class="list-group-item">Cras justo odio</li>
                             <li class="list-group-item">Dapibus ac facilisis in</li>
-                            <li class="list-group-item">Vestibulum at eros</li>
+                            <li class="list-group-item">Vestibulum at eros</li> 
+                            -->
                         </ul>
                     </div>
                 </div>

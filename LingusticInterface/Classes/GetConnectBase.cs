@@ -8,8 +8,7 @@ namespace LingusticInterface
 	public class GetConnectBase
 	{
 		//Data Base URL address 
-		public string ConnectURL = "Data Source=АДМИН\\SQLEXPRESS;Initial Catalog=LingusticBase;" +
-								   "Integrated Security=true";
+		public string ConnectURL = "Data Source=tcp:lingusticbase.database.windows.net,1433;Initial Catalog=LingusticBase;Persist Security Info=False;User ID=adminbd@qwertsahapmgmail.onmicrosoft.com;Password=1379248650Qaz;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Authentication='Active Directory Password'";
 
 		//Registr Query
 		public string GetRegistrQuery() 

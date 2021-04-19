@@ -60,6 +60,10 @@ namespace LingusticInterface
 			}
 			else 
 			{
+				textDanger.Visible = false;
+				textSuccess.Visible = true;
+				textSuccess.InnerText = "Текст обработан";
+
 				process.LinguisticProcessTextRender(text);
 				foreach (string s in process.wordListParseOfPredlog)
 					LinguisticTextResult.Value = s;
