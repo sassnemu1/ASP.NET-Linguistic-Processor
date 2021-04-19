@@ -44,16 +44,17 @@ namespace LingusticInterface
 
 			foreach (string[] s in data)
 			{
-				string id_user_text = s[3];
+				string id = s[0];
 				string title = s[1];
 				string text = s[2];
+				string id_user_text = s[3];
 
 				string li =
 					"<li>" +
-						"<button id='buttonTitleTextUserProfile' class='btn btn-primary' type='button' data-toggle='collapse' data-target='#collapse" + title + "' aria-expanded='false aria-controls='collapseExample'>" +
+						"<button id='buttonTitleTextUserProfile' class='btn btn-primary' type='button' data-toggle='collapse' data-target='#collapse" + id + "' aria-expanded='false aria-controls='collapseExample'>" +
 							title +
 						"</button>" +
-						"<div class='collapse' id='collapse" + title + "'>" +
+						"<div class='collapse' id='collapse" + id + "'>" +
 							"<div class='card card-body'>" +
 								text +
 							"</div>" +
