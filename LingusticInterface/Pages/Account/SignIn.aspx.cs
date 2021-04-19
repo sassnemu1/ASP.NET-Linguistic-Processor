@@ -52,10 +52,6 @@ namespace LingusticInterface
 
 				foreach (string[] s in data)
 				{
-<<<<<<< HEAD
-=======
-
->>>>>>> cbc150e2ac72d957574ddf512d73b50ce1073a94
 					bool authToken = cheackFormOnError.ToCheckDataSignInOnDataBases(login, password, s[1], s[2], messageErrorSignIn, messageSuccessSignIn);
 
 					if (authToken)
