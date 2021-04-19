@@ -53,4 +53,4 @@ jobs:
         app-name: 'linguisticapp'
         slot-name: 'production'
         publish-profile: ${{ secrets.AzureAppService_PublishProfile_484a2a7e44f643e1aa47cfa57b61dedd }}
-        package: .
+        package: ${{env.DOTNET_ROOT}}/myapp
