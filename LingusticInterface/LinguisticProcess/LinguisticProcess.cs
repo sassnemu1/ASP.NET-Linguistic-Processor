@@ -1,13 +1,13 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Web;
 
 namespace LingusticInterface
 {
 	public class LinguisticProcess
 	{
 		public List<string> wordListParseOfPredlog = new List<string>();
+
 		static List<string> wordListNotSymbol = new List<string>();
 		public void LinguisticProcessTextRender(string mainText)
 		{

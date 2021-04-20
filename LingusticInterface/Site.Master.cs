@@ -37,13 +37,14 @@ namespace LingusticInterface
 
 		protected void CloseButton_Click(object sender, EventArgs e)
 		{
-			CloseButton.PostBackUrl = "~/";
 			Auth auth = new Auth();
 			auth.AuthToken = false;
 
 			AuthCloseButtonNavigation.Visible = false;
 			MainContent.Visible = true;
 			ProfileContent.Visible = false;
+
+			Response.Redirect("/");
 		}
 
 		protected void LinguisticProcessButtonStart_Click(object sender, EventArgs e)
@@ -76,6 +77,7 @@ namespace LingusticInterface
 			UserInformation user = new UserInformation();
 
 			string title = TitleTextInput.Value;
+			string text = LinguisticText.Value;
 			string result = LinguisticTextResult.Value;
 
 			if (result != "")
@@ -85,15 +87,17 @@ namespace LingusticInterface
 				textSuccess.InnerText = "Текст сохранен !";
 
 				string connectURL = connect.ConnectURL;
-				string registrQuery = connect.GetSaveResultTextQuery();
+				string saveTextQuery = connect.GetSaveTextQuery();
+
+				string saveResultTextQuery = connect.GetSaveResultTextQuery();
 
 				SqlConnection myConnection = new SqlConnection(connectURL);
 				myConnection.Open();
 
-				using (SqlCommand command = new SqlCommand(registrQuery, myConnection))
+				using (SqlCommand command = new SqlCommand(saveTextQuery, myConnection))
 				{
 					command.Parameters.AddWithValue("@title", title);
-					command.Parameters.AddWithValue("@text", result);
+					command.Parameters.AddWithValue("@text", text);
 					command.Parameters.AddWithValue("@userid", user.Id);
 
 					command.CommandType = CommandType.Text;

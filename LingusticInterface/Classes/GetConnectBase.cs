@@ -29,9 +29,13 @@ namespace LingusticInterface
 		{
 			return "SELECT * FROM [Text] ORDER BY UserId";
 		}
-		public string GetSaveResultTextQuery()
+		public string GetSaveTextQuery()
 		{
 			return "INSERT INTO [Text] (Title, Text, UserId) VALUES (@title, @text, @userid)";
+		}
+		public string GetSaveResultTextQuery()
+		{
+			return "INSERT INTO [ResultText] (Title, ResultText, TextId) VALUES (@title, @resulttext, @textid)";
 		}
 	}
 }

@@ -56,6 +56,8 @@ namespace LingusticInterface
 					command.CommandType = CommandType.Text;
 					command.ExecuteNonQuery();
 				}
+
+				Response.Redirect("/Pages/Account/SignIn.aspx");
 			}
 
 		}

@@ -52,10 +52,10 @@ namespace LingusticInterface
 
 				foreach (string[] s in data)
 				{
-<<<<<<< HEAD
-=======
+//<<<<<<< HEAD
+//=======
 
->>>>>>> cbc150e2ac72d957574ddf512d73b50ce1073a94
+//>>>>>>> cbc150e2ac72d957574ddf512d73b50ce1073a94
 					bool authToken = cheackFormOnError.ToCheckDataSignInOnDataBases(login, password, s[1], s[2], messageErrorSignIn, messageSuccessSignIn);
 
 					if (authToken)
@@ -69,6 +69,8 @@ namespace LingusticInterface
 						user.Password = s[2];
 						user.Email = s[3];
 						user.Name = s[4];
+
+						Response.Redirect("/");
 					}
 				}
 			}

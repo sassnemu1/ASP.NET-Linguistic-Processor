@@ -12,6 +12,22 @@ li {
     list-style-type: none;
 }
 
+#AuthCloseButtonNavigation {
+    display: flex;
+    align-items: center;
+    margin-top: 8px;
+    margin-left: 30px;
+}
+    #AuthCloseButtonNavigation li {
+        display: flex;
+        margin-left: 10px;
+    }
+    #AuthCloseButtonNavigation li a {
+        padding: 6px 25px;
+    }
+    
+
+
 #buttonTitleTextUserProfile {
     width: 40%;
 }
