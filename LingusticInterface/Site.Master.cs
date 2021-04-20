@@ -67,7 +67,15 @@ namespace LingusticInterface
 
 				process.LinguisticProcessTextRender(text);
 				foreach (string s in process.wordListParseOfPredlog)
+				{
 					LinguisticTextResult.Value = s;
+				}
+					
+				foreach (string s in process.PredlogList)
+				{
+					string li = "<li>" + s + "</li>";
+					
+				}
 			}
 		}
 

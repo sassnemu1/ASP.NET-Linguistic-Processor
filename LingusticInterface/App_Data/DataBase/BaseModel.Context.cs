@@ -7,7 +7,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace LingusticInterface.DataBase
+namespace LingusticInterface.App_Data.DataBase
 {
     using System;
     using System.Data.Entity;
@@ -15,21 +15,11 @@ namespace LingusticInterface.DataBase
     
     public partial class LingusticBaseEntities : DbContext
     {
-        private static LingusticBaseEntities _context;
-
         public LingusticBaseEntities()
             : base("name=LingusticBaseEntities")
         {
         }
-
-        public static LingusticBaseEntities GetContext()
-        {
-            if (_context == null)
-                _context = new LingusticBaseEntities();
-
-            return _context;
-        }
-
+    
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
             throw new UnintentionalCodeFirstException();

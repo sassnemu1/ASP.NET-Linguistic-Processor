@@ -7,26 +7,17 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace LingusticInterface.DataBase
+namespace LingusticInterface.App_Data.DataBase
 {
     using System;
     using System.Collections.Generic;
     
-    public partial class User
+    public partial class sysdiagrams
     {
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
-        public User()
-        {
-            this.Text = new HashSet<Text>();
-        }
-    
-        public int Id { get; set; }
-        public string Login { get; set; }
-        public string Email { get; set; }
-        public string Password { get; set; }
-        public string Name { get; set; }
-    
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<Text> Text { get; set; }
+        public string name { get; set; }
+        public int principal_id { get; set; }
+        public int diagram_id { get; set; }
+        public Nullable<int> version { get; set; }
+        public byte[] definition { get; set; }
     }
 }

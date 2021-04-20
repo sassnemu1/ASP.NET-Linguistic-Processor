@@ -7,24 +7,26 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace LingusticInterface.DataBase
+namespace LingusticInterface.App_Data.DataBase
 {
     using System;
     using System.Collections.Generic;
     
-    public partial class Text
+    public partial class User
     {
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
-        public Text()
+        public User()
         {
-            this.User = new HashSet<User>();
+            this.Text = new HashSet<Text>();
         }
     
         public int Id { get; set; }
-        public string Title { get; set; }
-        public string Text1 { get; set; }
+        public string Login { get; set; }
+        public string Email { get; set; }
+        public string Password { get; set; }
+        public string Name { get; set; }
     
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<User> User { get; set; }
+        public virtual ICollection<Text> Text { get; set; }
     }
 }

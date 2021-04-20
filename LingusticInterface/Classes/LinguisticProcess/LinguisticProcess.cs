@@ -7,6 +7,8 @@ namespace LingusticInterface
 	public class LinguisticProcess
 	{
 		public List<string> wordListParseOfPredlog = new List<string>();
+		public List<string> SymbolList = new List<string>();
+		public List<string> PredlogList = new List<string>();
 
 		static List<string> wordListNotSymbol = new List<string>();
 		public void LinguisticProcessTextRender(string mainText)
@@ -53,8 +55,11 @@ namespace LingusticInterface
 			{
 				for (int j = 0; j < predlogWordArray.Length; j++) 
 				{
-					if (wordArray[i] == predlogWordArray[j]) 
+					if (wordArray[i] == predlogWordArray[j])
+					{
+						PredlogList.Add(predlogWordArray[j]);
 						Array.Clear(wordArray, i, 1);
+					}
 				}
 			}
 
@@ -87,7 +92,9 @@ namespace LingusticInterface
 				for (int j = 0; j < symbolArray.Length; j++)
 				{
 					if (wordArray[i] == symbolArray[j])
+					{
 						Array.Clear(wordArray, i, 1);
+					}	
 				}
 			}
 

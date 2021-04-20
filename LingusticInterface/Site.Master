@@ -57,7 +57,7 @@
                     </ul>
                     <ul runat="server" class="nav navbar-nav" id="AuthCloseButtonNavigation">
                         <li>
-                            <a runat="server" href="~/UserProfile" class="btn btn-default" id="navUserLogin"></a>
+                            <a runat="server" href="~/Pages/UserProfile" class="btn btn-default" id="navUserLogin"></a>
                         </li>
                         <li>
                             <asp:Button 
@@ -130,23 +130,15 @@
                             Знаки препинания
                         </div>
                         <ul class="list-group list-group-flush">
-
-                            <li class="list-group-item">Cras justo odio</li>
-                            <li class="list-group-item">Dapibus ac facilisis in</li>
-                            <li class="list-group-item">Vestibulum at eros</li>
-
+                            
                         </ul>
                     </div>
                     <div class="col-md-3 card">
                         <div class="card-header">
                             Предлоги
                         </div>
-                        <ul class="list-group list-group-flush">
-                            <!-- 
-                            <li class="list-group-item">Cras justo odio</li>
-                            <li class="list-group-item">Dapibus ac facilisis in</li>
-                            <li class="list-group-item">Vestibulum at eros</li> 
-                            -->
+                        <ul runat="server" class="list-group list-group-flush" id="">
+                            
                         </ul>
                     </div>
                 </div>
