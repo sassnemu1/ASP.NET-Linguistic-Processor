@@ -19,6 +19,7 @@
     </div>
 
     <div class="row">
+        <!--
         <div class="col-md-4">
             <h2>Getting started</h2>
             <p></p>
@@ -31,6 +32,7 @@
             <h2>Web Hosting</h2>
             <p></p>
         </div>
+        -->
     </div>
 
 </asp:Content>
