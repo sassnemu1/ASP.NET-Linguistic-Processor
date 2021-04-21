@@ -126,20 +126,10 @@
                 <br />
                 <div class="row">
                     <div class="col-md-3 card">
-                        <div class="card-header">
-                            Знаки препинания
-                        </div>
-                        <ul class="list-group list-group-flush">
-                            
-                        </ul>
+                        
                     </div>
                     <div class="col-md-3 card">
-                        <div class="card-header">
-                            Предлоги
-                        </div>
-                        <ul runat="server" class="list-group list-group-flush">
-                            
-                        </ul>
+                        
                     </div>
                 </div>
             </asp:ContentPlaceHolder>
